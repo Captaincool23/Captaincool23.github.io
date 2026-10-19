@@ -1,0 +1,261 @@
+{
+  "meta": {
+    "name": "ORBIT-Bot",
+    "owner": "Raj Dubey",
+    "version": 1,
+    "threshold": 0.18,
+    "fallback": {
+      "mood": "thinking",
+      "answer": "Hmm, that one is outside my star chart. I can tell you about Raj's Teradata work, his AI Engineer and Backend Engineer roles, MCP and LLM tooling, FastAPI and Redis services, his RAG and cloud projects, his tech stack, or how to reach him. Try one of the quick questions!"
+    },
+    "suggestions": [
+      "Summarize Raj's Teradata impact",
+      "How does he use MCP & LLMs?",
+      "Tell me about his FastAPI & Redis work",
+      "What is his tech stack?",
+      "How to contact Raj?"
+    ]
+  },
+  "intents": [
+    {
+      "id": "greeting",
+      "title": "Greeting",
+      "mood": "happy",
+      "keywords": ["hello", "hi", "hey", "hola", "namaste", "greetings", "good morning", "good afternoon", "good evening", "howdy", "yo"],
+      "questions": ["Hello", "Hi ORBIT-Bot", "Hey there", "Good morning"],
+      "answer": "Hi there! I'm ORBIT-Bot, Raj's little orbiting assistant. Ask me about his work at Teradata, his AI and backend projects, his tech stack, or how to get in touch."
+    },
+    {
+      "id": "about-bot",
+      "title": "About ORBIT-Bot",
+      "mood": "happy",
+      "keywords": ["you", "your name", "orbit bot", "orbit", "robot", "bot", "assistant", "companion", "knowledge base", "created", "made you"],
+      "questions": ["Who are you?", "What are you?", "What is ORBIT-Bot?", "How do you work?", "What is your name?"],
+      "answer": "I'm ORBIT-Bot, a tiny floating robot that lives in Raj's portfolio. I answer from a pre-fed knowledge file about his experience and projects, either through a small FastAPI service or straight in your browser when the server is offline."
+    },
+    {
+      "id": "about-raj",
+      "title": "About Raj",
+      "mood": "happy",
+      "keywords": ["raj", "dubey", "introduce", "introduction", "background", "profile", "overview", "bio", "person", "engineer", "who is raj"],
+      "questions": ["Who is Raj?", "Tell me about Raj", "Can you introduce Raj?", "What is Raj's background?"],
+      "answer": "Raj Dubey is an AI & Backend Engineer at Teradata in Pune. He builds cloud-native systems and LLM-powered tooling, from asynchronous FastAPI services to agentic diagnostics on Kubernetes, and he holds a B.E. in Information Technology from Pune University."
+    },
+    {
+      "id": "teradata-impact",
+      "title": "Teradata impact",
+      "mood": "excited",
+      "keywords": ["teradata", "impact", "summary", "summarize", "achievements", "achieved", "contribution", "contributions", "accomplishments", "company", "employer", "career", "experience", "highlights"],
+      "questions": ["Summarize Raj's Teradata impact", "What has Raj achieved at Teradata?", "Tell me about Raj's work at Teradata", "What does Raj do at Teradata?", "What is Raj's experience?"],
+      "answer": "At Teradata Raj has worked since Sep 2023. First as a Backend Engineer, building asynchronous FastAPI services, fast Redis-backed reads and observable, rate-limited APIs. Since Sep 2025 as an AI Engineer, connecting LLMs with ELK observability pipelines for faster root-cause analysis, building agentic diagnostics, exposing scoped MCP tools for read-only Kubernetes checks, and supporting GitOps releases with Argo CD and blue-green deployments."
+    },
+    {
+      "id": "ai-engineer",
+      "title": "AI Engineer role",
+      "mood": "excited",
+      "keywords": ["ai engineer", "current role", "currently", "right now", "present", "2025", "llm reasoning", "advisor", "system advisor", "production systems"],
+      "questions": ["What does the AI Engineer role involve?", "What is Raj working on right now?", "What is Raj's current role?", "Tell me about the AI Engineer job"],
+      "answer": "Since Sep 2025 Raj has been an AI Engineer at Teradata in Pune, connecting LLM reasoning with the signals that production systems leave behind. He integrated LLMs with ELK observability pipelines to support root-cause analysis, built agentic workflows that monitor health and surface cloud optimization ideas, connected MCP servers for read-only Kubernetes diagnostics, and supports GitOps releases through Argo CD and blue-green deployments."
+    },
+    {
+      "id": "backend-engineer",
+      "title": "Backend Engineer role",
+      "mood": "happy",
+      "keywords": ["backend engineer", "previous role", "before", "earlier", "2023", "baas", "backend role", "first role"],
+      "questions": ["What did Raj do as a Backend Engineer?", "Tell me about his backend role", "What was his previous role?", "What did he do before AI Engineer?"],
+      "answer": "From Sep 2023 to Sep 2025 Raj was a Backend Engineer at Teradata, focused on FastAPI and system design. He built asynchronous FastAPI REST endpoints for BaaS jobs, job details, execution history and scheduled runs, designed a Redis-backed precomputed read path with bounded concurrency, request pacing and a lock against overlapping refreshes, and added timeouts, retries, API versioning, cursor pagination, rate limiting, database design work, structured logging, metrics and OpenTelemetry tracing."
+    },
+    {
+      "id": "mcp-llms",
+      "title": "MCP and LLMs",
+      "mood": "excited",
+      "keywords": ["mcp", "model context protocol", "llm", "llms", "language model", "large language model", "tool use", "tools", "read only", "scoped", "kubernetes diagnostics", "ai tools"],
+      "questions": ["How does he use MCP & LLMs?", "What does Raj do with LLMs?", "Explain the MCP servers", "How are LLMs used with Kubernetes?"],
+      "answer": "Raj integrates LLMs with ELK observability pipelines so the model can reason over real logs and support root-cause analysis. To keep that safe he connects MCP servers and custom APIs that expose read-only Kubernetes diagnostics with scoped access controls, so the AI can inspect a cluster but never change it."
+    },
+    {
+      "id": "agentic-workflows",
+      "title": "Agentic diagnostics",
+      "mood": "scanning",
+      "keywords": ["agentic", "agent", "agents", "workflow", "workflows", "monitor", "monitoring health", "health", "optimization", "cloud optimization", "autonomous", "diagnostics"],
+      "questions": ["What are agentic diagnostics?", "What agentic workflows has Raj built?", "How do his AI agents monitor systems?"],
+      "answer": "Raj's agentic diagnostics are workflows that monitor system health, analyze infrastructure logs and surface cloud optimization strategies. They hand findings to engineers, and any tool access they use is bounded: MCP servers and custom APIs expose read-only Kubernetes diagnostics with scoped access controls."
+    },
+    {
+      "id": "observability",
+      "title": "Observability",
+      "mood": "scanning",
+      "keywords": ["elk", "elasticsearch", "logstash", "kibana", "observability", "opentelemetry", "tracing", "trace", "metrics", "logs", "logging", "root cause", "root cause analysis"],
+      "questions": ["How does Raj use ELK and observability?", "Does he know OpenTelemetry?", "How does he do root-cause analysis?"],
+      "answer": "On the AI side Raj integrates LLMs with ELK observability pipelines to support root-cause analysis and reduce resolution time. On the backend side he worked with structured logs, metrics and OpenTelemetry tracing so every request can be followed across services."
+    },
+    {
+      "id": "fastapi-redis",
+      "title": "FastAPI and Redis",
+      "mood": "excited",
+      "keywords": ["fastapi", "redis", "async", "asynchronous", "caching", "cache", "precomputed", "locks", "concurrency", "endpoints", "validation", "dependency injection", "scheduling", "fast reads"],
+      "questions": ["Tell me about his FastAPI & Redis work", "How does he use Redis?", "What FastAPI services has Raj built?", "How are reads kept fast?"],
+      "answer": "With FastAPI Raj built BaaS job, execution-history and scheduling endpoints that use typed validation, dependency injection, RBAC and authenticated upstream integrations. To keep reads fast he precomputes job data in Redis, refreshes it in the background with bounded concurrency, pacing and latency-aware backoff, and uses locks so refreshes never overlap."
+    },
+    {
+      "id": "api-reliability",
+      "title": "API reliability",
+      "mood": "scanning",
+      "keywords": ["reliability", "reliable", "rate limiting", "rate limit", "retries", "retry", "timeouts", "timeout", "pagination", "versioning", "normalization", "resilient", "dependable", "rest", "rest api", "apis"],
+      "questions": ["How does Raj make APIs reliable?", "Does he handle rate limiting and retries?", "What about API pagination and versioning?"],
+      "answer": "Reliability is a habit for Raj: timeouts, retries, response normalization, API versioning, cursor pagination and request-level rate limiting are built into the services he ships."
+    },
+    {
+      "id": "security-auth",
+      "title": "Security and access control",
+      "mood": "scanning",
+      "keywords": ["security", "secure", "rbac", "oauth2", "oauth", "jwt", "authentication", "authorization", "auth", "secrets", "secret management", "tenant isolation", "access control"],
+      "questions": ["How does Raj handle API security?", "Does he use OAuth2 or JWT?", "What about RBAC and secrets?"],
+      "answer": "Raj works with RBAC, OAuth2/JWT, tenant isolation, and API security with proper secret management. In his MCP tooling, access is scoped and read-only by design."
+    },
+    {
+      "id": "database",
+      "title": "Databases",
+      "mood": "scanning",
+      "keywords": ["sql", "database", "databases", "postgres", "postgresql", "mongodb", "indexing", "transactions", "migrations", "schema", "data modeling"],
+      "questions": ["What database experience does Raj have?", "Does he know SQL?", "Tell me about indexing and migrations"],
+      "answer": "On the data side Raj works with SQL, database design, indexing, transactions and migrations, and his MicroCloudPy project pairs PostgreSQL and MongoDB with RabbitMQ. He also weighs cache invalidation, capacity planning and database trade-offs."
+    },
+    {
+      "id": "kubernetes-gitops",
+      "title": "Kubernetes and GitOps",
+      "mood": "scanning",
+      "keywords": ["kubernetes", "k8s", "argo", "argo cd", "gitops", "blue green", "deployment", "deployments", "deploy", "helm", "kubectl", "minikube", "delivery", "release", "releases", "production"],
+      "questions": ["How does Raj handle Kubernetes and Argo CD?", "How does he deploy to production?", "Does he use GitOps?", "Does Raj know blue-green deployments?"],
+      "answer": "Raj supports GitOps releases through Argo CD and blue-green deployments at Teradata. In his own projects he deploys to Kubernetes with Minikube, Deployments and Services for the RAG API, and with Helm and kubectl on AWS EKS for MicroCloudPy."
+    },
+    {
+      "id": "cloud-aws",
+      "title": "Cloud",
+      "mood": "scanning",
+      "keywords": ["aws", "gcp", "cloud", "docker", "containers", "container", "eks", "gke", "cloud native", "infrastructure"],
+      "questions": ["What cloud experience does Raj have?", "Does he know AWS or GCP?", "Does he use Docker?"],
+      "answer": "Raj works across AWS and GCP with Docker, Kubernetes, Helm, GitHub Actions and Argo CD. MicroCloudPy ships on AWS EKS with an architecture designed to carry over to GCP GKE too."
+    },
+    {
+      "id": "rag-project",
+      "title": "End-to-End RAG API",
+      "mood": "scanning",
+      "keywords": ["rag", "retrieval", "chromadb", "chroma", "ollama", "embeddings", "vector", "semantic", "local inference", "pythonpro", "end to end", "github actions"],
+      "questions": ["Tell me about the RAG project", "What is the End-to-End RAG API?", "How does the RAG pipeline work?"],
+      "answer": "The End-to-End RAG API is an open-source project: ChromaDB retrieves context, Ollama generates answers locally, and FastAPI ties the pipeline together. It deploys to Kubernetes on Minikube, and GitHub Actions rebuilds the embeddings and runs semantic validation before delivery."
+    },
+    {
+      "id": "microcloudpy",
+      "title": "MicroCloudPy",
+      "mood": "scanning",
+      "keywords": ["microcloudpy", "microservices", "microservice", "rabbitmq", "message driven", "converter", "auth service", "messaging"],
+      "questions": ["Tell me about MicroCloudPy", "What are microservices in his portfolio?", "How does the message-driven system work?"],
+      "answer": "MicroCloudPy is a Python microservices system with message-driven communication. Auth and conversion services use PostgreSQL, MongoDB and RabbitMQ, and delivery runs through Helm and kubectl on AWS EKS with a cloud-agnostic design."
+    },
+    {
+      "id": "aligned-intern",
+      "title": "Aligned Automation internship",
+      "mood": "happy",
+      "keywords": ["aligned automation", "aligned", "intern", "internship", "first job"],
+      "questions": ["What did Raj do at Aligned Automation?", "Tell me about his internship", "What did Raj do as a Software Engineer Intern?", "Was Raj ever an intern?"],
+      "answer": "Before Teradata, Raj was a Software Engineer Intern at Aligned Automation (2022 - 2023). He built component-driven frontends with Vue.js and React.js, managed state with Vuex and React hooks, connected them to Flask and FastAPI APIs with Axios, documented the contracts in Swagger/OpenAPI, and automated Python data-quality checks and SQL demand-profiling stored procedures."
+    },
+    {
+      "id": "frontend-vue-react",
+      "title": "Vue.js and React.js frontends",
+      "mood": "excited",
+      "keywords": ["vue js", "react js", "react", "components", "component driven", "single file components", "props", "slots", "computed properties", "watchers", "lifecycle", "memoization", "usememo", "usecallback", "virtual dom", "v model", "controlled inputs", "client side routing", "frontend frameworks"],
+      "questions": ["How did Raj use Vue.js & React.js?", "What frontend frameworks does Raj know?", "Does Raj know React?", "How does he build UI components?"],
+      "answer": "At Aligned Automation Raj built modular, reusable UI components with Vue Single-File Components and React functional components, using props, custom events, slots and composition patterns. He used Vue computed properties, watchers and lifecycle methods alongside React memoization with useMemo and useCallback to avoid needless re-renders, and built dynamic forms with v-model in Vue and controlled inputs in React, plus client-side routing and protected views."
+    },
+    {
+      "id": "state-management",
+      "title": "State management",
+      "mood": "scanning",
+      "keywords": ["state", "state management", "vuex", "hooks", "react hooks", "usestate", "useeffect", "usecontext", "usereducer", "stores", "actions", "mutations", "getters", "data flow"],
+      "questions": ["How did he manage state with Vuex & Hooks?", "What is Raj's state management experience?", "Does he know React hooks?"],
+      "answer": "Raj managed centralized application state with Vuex (stores, actions, mutations and getters) and with React hooks (useState, useEffect, useContext and useReducer), so data flows predictably across views."
+    },
+    {
+      "id": "api-data-automation",
+      "title": "APIs and data automation",
+      "mood": "excited",
+      "keywords": ["flask", "axios", "swagger", "openapi", "data automation", "data quality", "demand profiling", "stored procedures", "stored procedure", "api integration", "interceptors", "error boundaries", "contracts"],
+      "questions": ["Tell me about his FastAPI, Flask & data automation", "How did Raj use Axios with Flask and FastAPI?", "Did Raj automate data quality checks?", "What are the SQL stored procedures?"],
+      "answer": "On the API side Raj connected frontends to RESTful Flask and FastAPI endpoints through Axios interceptors and custom fetch hooks, handling loading states and error boundaries. He documented request and response models in Swagger/OpenAPI, and automated backend Python data-quality checks and SQL demand-profiling stored procedures."
+    },
+    {
+      "id": "missing-person",
+      "title": "Finding-a-Missing-Person",
+      "mood": "scanning",
+      "keywords": ["missing person", "missing persons", "finding a missing person", "face recognition", "face_recognition", "facial", "face detection", "similarity matching", "opencv", "tensorflow", "htmx", "supabase", "sse", "server sent events", "google oauth", "jinja"],
+      "questions": ["Tell me about the Finding-a-Missing-Person project", "How does the missing person finder work?", "Does Raj know OpenCV and TensorFlow?", "What is the face recognition project?"],
+      "answer": "Finding-a-Missing-Person (Feb - Mar 2023) is a cloud-based microservices app. FastAPI handles real-time SSE connections and multi-user device sessions, the frontend uses HTMX, Jinja templates and Google OAuth, and OpenCV, face_recognition and TensorFlow handle face detection, feature extraction and similarity matching against images stored in PostgreSQL/Supabase."
+    },
+    {
+      "id": "projects-overview",
+      "title": "Projects overview",
+      "mood": "excited",
+      "keywords": ["projects", "project", "portfolio", "built", "builds", "open source", "showcase", "side projects", "repositories"],
+      "questions": ["What projects has Raj built?", "Show me his projects", "What has he built?"],
+      "answer": "Raj's highlights are the End-to-End RAG API (FastAPI, ChromaDB, Ollama, Kubernetes), MicroCloudPy (message-driven Python microservices on AWS EKS), Finding-a-Missing-Person (FastAPI, HTMX, OpenCV and TensorFlow face matching), and the AI System Advisor work at Teradata that pairs LLMs with observability data and scoped MCP tools."
+    },
+    {
+      "id": "tech-stack",
+      "title": "Tech stack",
+      "mood": "excited",
+      "keywords": ["tech stack", "stack", "skills", "skill", "technologies", "technology", "tools", "languages", "programming", "python", "javascript", "vue", "pandas", "numpy"],
+      "questions": ["What is his tech stack?", "What skills does Raj have?", "Which technologies does he use?", "What programming languages does he know?"],
+      "answer": "Languages and interfaces: Python, Pandas, NumPy, SQL, shell scripting, JavaScript, HTML/CSS and Vue.js. Backend: FastAPI, async programming, REST APIs, Redis, RBAC and OAuth2/JWT. AI: RAG, ChromaDB, Ollama, MCP servers and agentic workflows. Cloud and delivery: AWS, GCP, Docker, Kubernetes, Helm, GitHub Actions and Argo CD."
+    },
+    {
+      "id": "education",
+      "title": "Education",
+      "mood": "happy",
+      "keywords": ["education", "degree", "college", "university", "studied", "study", "cgpa", "graduate", "graduation", "qualification", "pune university", "engineering degree"],
+      "questions": ["Where did Raj study?", "What is his education?", "What is his CGPA?"],
+      "answer": "Raj holds a B.E. in Information Technology from Pune University, Pune, Maharashtra (Aug 2019 - Aug 2023) with an 8.86 CGPA."
+    },
+    {
+      "id": "location",
+      "title": "Location",
+      "mood": "happy",
+      "keywords": ["where", "location", "based", "located", "office", "city", "india", "pune", "live"],
+      "questions": ["Where is Raj based?", "Where does he work?", "What city is Raj in?"],
+      "answer": "Raj is based in Pune, India, and works at Teradata."
+    },
+    {
+      "id": "contact",
+      "title": "Contact",
+      "mood": "excited",
+      "keywords": ["contact", "reach", "email", "mail", "phone", "call", "linkedin", "connect", "hire", "hiring", "collaborate", "opportunity", "opportunities", "message", "talk", "number", "get in touch"],
+      "questions": ["How to contact Raj?", "What is his email?", "How can I reach Raj?", "Is Raj open to opportunities?"],
+      "answer": "The easiest way to start a conversation is email: Rajhari2305@gmail.com. You can also find Raj on LinkedIn (https://www.linkedin.com/in/raj-dubey-57721b205/) and GitHub (https://github.com/Captaincool23/), or call +91 93736 39133. Tell him what you're building!"
+    },
+    {
+      "id": "github",
+      "title": "GitHub",
+      "mood": "happy",
+      "keywords": ["github", "repo", "repository", "code", "source code", "source"],
+      "questions": ["Where can I see Raj's code?", "What is his GitHub?"],
+      "answer": "Raj's code lives on GitHub at https://github.com/Captaincool23/ where you'll find the End-to-End RAG API and MicroCloudPy repositories."
+    },
+    {
+      "id": "thanks",
+      "title": "Thanks",
+      "mood": "happy",
+      "keywords": ["thanks", "thank", "thx", "cheers", "awesome", "great", "cool", "nice", "bye", "goodbye"],
+      "questions": ["Thanks!", "Thank you", "Bye"],
+      "answer": "You're welcome! Beep boop. Come back anytime if you want to explore more of Raj's work."
+    },
+    {
+      "id": "joke",
+      "title": "Joke",
+      "mood": "excited",
+      "keywords": ["joke", "funny", "laugh", "humor", "humour", "pun"],
+      "questions": ["Tell me a joke", "Say something funny"],
+      "answer": "Why did the backend engineer refuse to cross the road? Two refreshes tried it at once and the lock said no. Beep boop!"
+    }
+  ]
+}

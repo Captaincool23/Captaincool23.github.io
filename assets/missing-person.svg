@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 1080" width="1440" height="1080">
+  <defs>
+    <style>path, rect, ellipse { vector-effect: non-scaling-stroke; }</style>
+    <radialGradient id="bg" cx=".5" cy=".52" r=".72"><stop offset="0" stop-color="#0f2b36"/><stop offset=".6" stop-color="#0a1c24"/><stop offset="1" stop-color="#071116"/></radialGradient>
+    <linearGradient id="slab" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#15434f"/><stop offset="1" stop-color="#0b2733"/></linearGradient>
+    <linearGradient id="cyl" x1="0" x2="1"><stop offset="0" stop-color="#0c3340"/><stop offset=".42" stop-color="#1d6a80"/><stop offset="1" stop-color="#092935"/></linearGradient>
+    <pattern id="dots" width="48" height="48" patternUnits="userSpaceOnUse"><path d="M48 0H0V48" fill="none" stroke="#7dd3fc" stroke-opacity=".045"/></pattern>
+  </defs>
+  <rect width="1440" height="1080" fill="url(#bg)"/>
+  <rect width="1440" height="1080" fill="url(#dots)"/>
+  <ellipse cx="711" cy="660" rx="600" ry="270" fill="#38bdf8" opacity=".07"/>
+
+  <g stroke="#7dd3fc" stroke-opacity=".28" stroke-width="1.2">
+    <rect width="1" height="1" fill="#071b24" transform="matrix(463 230 0 26 305 565)"/>
+    <rect width="1" height="1" fill="#05141b" transform="matrix(349 -175 0 26 768 795)"/>
+    <rect width="1" height="1" fill="url(#slab)" transform="matrix(463 230 349 -175 305 565)"/>
+  </g>
+  <g transform="matrix(463 230 349 -175 305 565)" fill="none" stroke="#7dd3fc">
+    <path d="M.1 0V1M.2 0V1M.3 0V1M.4 0V1M.5 0V1M.6 0V1M.7 0V1M.8 0V1M.9 0V1M0 .1H1M0 .2H1M0 .3H1M0 .4H1M0 .5H1M0 .6H1M0 .7H1M0 .8H1M0 .9H1" stroke-opacity=".12" stroke-width="1"/>
+    <path d="M.22 .2H.13V.9H.5V.5H.81V.84" stroke-opacity=".4" stroke-width="1.6" stroke-linejoin="round"/>
+  </g>
+
+  <g stroke="#7dd3fc" stroke-opacity=".3" stroke-width="1.2">
+    <rect width="1" height="1" fill="#134a5c" transform="matrix(64.82 32.2 0 -170 602.6 462)"/>
+    <rect width="1" height="1" fill="#0c3342" transform="matrix(69.8 -35 0 -170 667.4 494.2)"/>
+    <rect width="1" height="1" fill="#1f7088" transform="matrix(64.82 32.2 69.8 -35 602.6 292)"/>
+  </g>
+  <g transform="matrix(64.82 32.2 0 -170 602.6 462)" fill="#7dd3fc"><rect x=".16" y=".16" width=".68" height=".035" opacity=".85"/><rect x=".16" y=".34" width=".5" height=".035" opacity=".6"/><rect x=".16" y=".52" width=".68" height=".035" opacity=".85"/><rect x=".16" y=".7" width=".42" height=".035" opacity=".6"/></g>
+  <g transform="matrix(69.8 -35 0 -170 667.4 494.2)" fill="#7dd3fc" opacity=".7"><rect x=".2" y=".16" width=".08" height=".03"/><rect x=".2" y=".34" width=".08" height=".03"/><rect x=".2" y=".52" width=".08" height=".03"/><rect x=".2" y=".7" width=".08" height=".03"/></g>
+  <g transform="matrix(64.82 32.2 69.8 -35 602.6 292)"><rect x=".22" y=".22" width=".56" height=".56" fill="#7dd3fc" fill-opacity=".45" stroke="#e0f7ff" stroke-opacity=".8" stroke-width="1.2"/></g>
+  <g fill="none" stroke="#7dd3fc" stroke-linecap="round" stroke-width="3"><path d="M646 262Q670 236 694 262" opacity=".85"/><path d="M630 248Q670 212 710 248" opacity=".5"/><path d="M614 234Q670 188 726 234" opacity=".25"/></g>
+
+  <g>
+    <path d="M921 486V604A52 26 0 0 0 1025 604V486Z" fill="url(#cyl)" stroke="#7dd3fc" stroke-opacity=".3" stroke-width="1.2"/>
+    <path d="M921 522A52 26 0 0 0 1025 522M921 558A52 26 0 0 0 1025 558" fill="none" stroke="#7dd3fc" stroke-opacity=".35" stroke-width="1.2"/>
+    <ellipse cx="973" cy="486" rx="52" ry="26" fill="#2b8fae" stroke="#bdeaff" stroke-opacity=".6" stroke-width="1.2"/>
+    <ellipse cx="973" cy="486" rx="34" ry="17" fill="none" stroke="#e0f7ff" stroke-opacity=".8" stroke-width="1.5"/>
+  </g>
+
+  <g stroke="#7dd3fc" stroke-opacity=".3" stroke-width="1.2">
+    <rect width="1" height="1" fill="#12404f" transform="matrix(129.64 64.4 0 -30 597.3 584.8)"/>
+    <rect width="1" height="1" fill="#0b2f3c" transform="matrix(97.72 -49 0 -30 726.9 649.2)"/>
+    <rect width="1" height="1" fill="#18576a" transform="matrix(129.64 64.4 97.72 -49 597.3 554.8)"/>
+  </g>
+  <g transform="matrix(129.64 64.4 97.72 -49 597.3 554.8)" fill="none" stroke="#7dd3fc">
+    <path d="M.5 .06V.94M.06 .5H.94" stroke-opacity=".25" stroke-width="1"/>
+    <ellipse cx=".5" cy=".5" rx=".318" ry=".421" stroke-opacity=".5" stroke-width="1.3"/>
+    <ellipse cx=".5" cy=".5" rx=".221" ry=".293" stroke="#bdeaff" stroke-opacity=".8" stroke-width="1.4"/>
+    <ellipse cx=".5" cy=".5" rx=".124" ry=".165" stroke="#e0f7ff" stroke-width="1.6"/>
+    <path d="M.14 .26V.14H.26M.74 .14H.86V.26M.86 .74V.86H.74M.26 .86H.14V.74" stroke="#e0f7ff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M.403 .427L.5 .518L.597 .427M.431 .628L.5 .518L.569 .628M.431 .628L.5 .701L.569 .628" stroke="#e0f7ff" stroke-opacity=".7" stroke-width="1"/>
+  </g>
+  <g transform="matrix(129.64 64.4 97.72 -49 597.3 554.8)" fill="#e0f7ff"><ellipse cx=".403" cy=".427" rx=".016" ry=".021"/><ellipse cx=".597" cy=".427" rx=".016" ry=".021"/><ellipse cx=".5" cy=".518" rx=".016" ry=".021"/><ellipse cx=".431" cy=".628" rx=".016" ry=".021"/><ellipse cx=".569" cy=".628" rx=".016" ry=".021"/><ellipse cx=".5" cy=".701" rx=".016" ry=".021"/></g>
+
+  <g stroke="#7dd3fc" stroke-opacity=".3" stroke-width="1.2">
+    <rect width="1" height="1" fill="#10404f" transform="matrix(148.16 73.6 0 -90 397.9 555.4)"/>
+    <rect width="1" height="1" fill="#0a2c38" transform="matrix(10.47 -5.25 0 -90 546 629)"/>
+    <rect width="1" height="1" fill="#1b5d70" transform="matrix(148.16 73.6 10.47 -5.25 397.9 465.4)"/>
+  </g>
+  <g transform="matrix(148.16 73.6 0 -90 397.9 555.4)">
+    <rect x=".05" y=".1" width=".9" height=".8" fill="#08212b" stroke="#7dd3fc" stroke-opacity=".6" stroke-width="1.2"/>
+    <ellipse cx=".26" cy=".64" rx=".075" ry=".12" fill="none" stroke="#e0f7ff" stroke-width="1.4"/>
+    <path d="M.12 .16Q.26 .52 .4 .16" fill="none" stroke="#e0f7ff" stroke-width="1.4" stroke-linecap="round"/>
+    <path d="M.13 .5V.38H.2M.32 .38H.39V.5M.39 .76V.88H.32M.2 .88H.13V.76" fill="none" stroke="#7dd3fc" stroke-width="1.3" stroke-linecap="round"/>
+    <g fill="#7dd3fc"><rect x=".54" y=".66" width=".34" height=".07" opacity=".75"/><rect x=".54" y=".5" width=".24" height=".06" opacity=".5"/><rect x=".54" y=".24" width=".26" height=".12" opacity=".9"/></g>
+  </g>
+
+  <g>
+    <path d="M768 597V681A52 26 0 0 0 872 681V597Z" fill="url(#cyl)" stroke="#7dd3fc" stroke-opacity=".3" stroke-width="1.2"/>
+    <path d="M768 633A52 26 0 0 0 872 633" fill="none" stroke="#7dd3fc" stroke-opacity=".35" stroke-width="1.2"/>
+    <ellipse cx="820" cy="597" rx="52" ry="26" fill="#2b8fae" stroke="#bdeaff" stroke-opacity=".6" stroke-width="1.2"/>
+    <ellipse cx="820" cy="597" rx="34" ry="17" fill="none" stroke="#e0f7ff" stroke-opacity=".8" stroke-width="1.5"/>
+  </g>
+
+  <g font-family="'Space Grotesk','DM Sans',Arial,sans-serif">
+    <text x="110" y="316" font-size="30" font-weight="700" letter-spacing="4" fill="#7dd3fc">FASTAPI</text>
+    <text x="110" y="352" font-size="22" fill="#6b919f">Real-time SSE sessions</text>
+    <text x="1330" y="316" font-size="30" font-weight="700" letter-spacing="4" fill="#7dd3fc" text-anchor="end">POSTGRES + SUPABASE</text>
+    <text x="1330" y="352" font-size="22" fill="#6b919f" text-anchor="end">Uploaded image store</text>
+    <text x="110" y="900" font-size="30" font-weight="700" letter-spacing="4" fill="#7dd3fc">HTMX + OAUTH</text>
+    <text x="110" y="936" font-size="22" fill="#6b919f">Jinja web client</text>
+    <text x="1330" y="900" font-size="30" font-weight="700" letter-spacing="4" fill="#7dd3fc" text-anchor="end">OPENCV + TENSORFLOW</text>
+    <text x="1330" y="936" font-size="22" fill="#6b919f" text-anchor="end">Face matching core</text>
+  </g>
+</svg>
